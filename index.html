@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Segment Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <span><</span> 
+    <h3>View Audience</h3>
+  </header>
+<button id="saveSegmentBtn">Save Segment</button>
+
+<div class="popup" id="popup">
+
+  <header>
+     <span><</span> 
+     <h3>Saving Segment</h3>
+  </header><br>
+
+  <div class="content">
+     <div class="Segmentname">
+         <label id="label_segement_name" for="segmentname">Enter Segment Name</label>
+         <input type="text" id="segmentName" placeholder="Enter name of the Segment">
+         </div><br>
+
+      <p style="font-size: large;">
+      To save your segment,you need to add the schemas to <br> build the query 
+      </p><br> 
+
+      <div id="schemaContainer" class="schema-container">
+
+      </div>
+
+  <select id="schemaDropdown">
+    <option value="">Add schema to segment</option>
+    <option value="first_name">First Name</option>
+    <option value="last_name">Last Name</option>
+    <option value="gender">Gender</option>
+    <option value="age">Age</option>
+    <option value="account_name">Account Name</option>
+    <option value="city">City</option>
+    <option value="state">State</option>
+  </select>
+
+  <a href="#" id="addSchemaLink">+Add new schema</a>
+</div>
+
+<footer>
+  
+  <div class="footer_buttons" style="padding-top: 15px;">
+    <button id="Submit_segment">Save the Segment</button>
+    <button id="cancel">Cancel</button>
+ </div>
+
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
